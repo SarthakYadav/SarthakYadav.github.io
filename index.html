@@ -24,7 +24,7 @@
               </p>
               <br/>
               <p align="justify"><font size="3">
-              I am an MSc (Research) student at the <a href="https://www.gla.ac.uk/schools/computing/" target="_blank"><font size="3">School of Computing Science</font></a>, University of Glasgow.
+              I am an MSc (Research) student at the <a href="https://www.gla.ac.uk/schools/computing/" target="_blank"><font size="3">School of Computing Science</font></a>, University of Glasgow, supervised by <a href="http://www.dcs.gla.ac.uk/~mefoster/" target="_blank"><font size="3">Dr. Mary Ellen Foster</font></a>.
               </font></p>
               <p align="justify"><font size="3">
               Previously, I worked as the Lead Research Engineer at <a href="https://www.staqu.com/" target="_blank"><font size="3">Staqu Technologies</font></a>, a premier Indian AI startup, where I led the design and development of several large scale mission-critical intelligent systems, spanning computer vision (such as violence recognition and scalable object detection), spoken language understanding (most prominently speaker biometrics and ASR) and neural machine translation for low-resource languages.
@@ -265,7 +265,40 @@
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+          <!-- PROJECT - LEAF pytorch -->
+          <tr onmouseout="proj_leaf_stop()" onmouseover="proj_leaf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <!-- <div class="two" id='proj_leaf_image'><img src='images/specs_wide2_re.jpg'></div>
+                <img src='images/specs_wide2_re.jpg'> -->
+              </div>
+              <script type="text/javascript">
+                function proj_leaf_start() {
+                  document.getElementById('proj_leaf_image').style.opacity = "1";
+                }
 
+                function proj_leaf_stop() {
+                  document.getElementById('proj_leaf_image').style.opacity = "0";
+                }
+                proj_leaf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle;text-align:justify">
+              <a href="https://github.com/SarthakYadav/leaf-pytorch" target="_blank">
+                <papertitle><font size="3">Raw waveform modelling using the LEAF front-end</font></papertitle>
+              </a>
+              <br><br>
+              <font size="3">
+              PyTorch implementation of the paper "<i>LEAF: A Learnable Frontend for Audio Classification</i>", by Zeghidour et al., 2021. Includes training support on GPU and a single TPU node using torch-xla. Pre-trained models on several datasets released.
+              </font>
+              <br>
+              <p></p>
+              <a href="https://github.com/SarthakYadav/leaf-pytorch" target="_blank"><font size="3">Code</font></a> /
+              <a href="https://openreview.net/forum?id=jM76BCb6F9m" target="_blank"><font size="3">Paper</font></a>
+              <p></p>
+            </td>
+          </tr>
 
           <!-- PROJECT - FSD50K baseline -->
           <tr onmouseout="proj_ser_stop()" onmouseover="proj_ser_start()">
@@ -291,7 +324,7 @@
               </a>
               <br><br>
               <font size="3">
-              PyTorch implementation of the paper "<i>FSD50K: an Open Dataset of Human-Labeled Sound Events</i>", by Serra et al., 2020.
+              PyTorch implementation of the paper "<i>FSD50K: an Open Dataset of Human-Labeled Sound Events</i>", by Fonseca et al., 2020.
               </font>
               <br>
               <p></p>
