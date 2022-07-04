@@ -24,7 +24,8 @@
               </p>
               <br/>
               <p align="justify"><font size="3">
-              I am an MSc (Research) student at the <a href="https://www.gla.ac.uk/schools/computing/" target="_blank"><font size="3">School of Computing Science</font></a>, University of Glasgow, supervised by <a href="http://www.dcs.gla.ac.uk/~mefoster/" target="_blank"><font size="3">Dr. Mary Ellen Foster</font></a>.
+              I am a Research Intern with the <a href="https://www.idiap.ch/en/scientific-research/speech-and-audio-processing/index_html" target="_blank"><font size="3">Speech and Audio Processing Group</font></a> at the <a href="https://www.idiap.ch/en" target="_blank"><font size="3">IDIAP Research Institute</font></a>, where I'm working on explanability of deep acoustic models for emotion recognition and biosignals (breathing pattern estimation, ECG) under the supervision of <a href="https://www.idiap.ch/en/people/directory/110" target="_blank"><font size="3">Dr. Mathew Magimai Doss</font></a>.
+              I recently completed my MSc(R) in Computing Science from the <a href="https://www.gla.ac.uk/schools/computing/" target="_blank"><font size="3">University of Glasgow</font></a>, supervised by <a href="http://www.dcs.gla.ac.uk/~mefoster/" target="_blank"><font size="3">Dr. Mary Ellen Foster</font></a>, with a thesis on understanding how self-supervised and supervised deep acoustic models for audio classification differ by inverting intermediate representations into the audio signal space.
               </font></p>
               <p align="justify"><font size="3">
               Previously, I worked as the Lead Research Engineer at <a href="https://www.staqu.com/" target="_blank"><font size="3">Staqu Technologies</font></a>, a premier Indian AI startup, where I led the design and development of several large scale mission-critical intelligent systems, spanning computer vision (such as violence recognition and scalable object detection), spoken language understanding (most prominently speaker biometrics and ASR) and neural machine translation for low-resource languages.
@@ -34,7 +35,7 @@
               <br>
               <p style="text-align:center">
                 <a href="mailto:sarthak.yadav3@gmail.com" target="_blank"><font size="3">Email</font></a> &nbsp|&nbsp
-                <a href="https://drive.google.com/file/d/1Nxftx4bwIPxAQlHXMiGluiuTZL5Y_zwA/view?usp=sharing" target="_blank">CV</a> &nbsp|&nbsp
+                <a href="https://drive.google.com/file/d/1hnhlSIe7vSir3VpBiTbMuZ26C2E51g4F/view?usp=sharing" target="_blank">CV</a> &nbsp|&nbsp
                 <a href="https://scholar.google.com/citations?user=cVsg9VsAAAAJ&hl=en" target="_blank"><font size="3">Google Scholar</font></a> &nbsp|&nbsp
                 <a href="https://www.linkedin.com/in/sarthakyadav/" target="_blank"><font size="3"> LinkedIn </font></a>  &nbsp|&nbsp
                 <a href="https://github.com/SarthakYadav" target="_blank"><font size="3"> GitHub </font></a>  &nbsp|&nbsp
@@ -54,7 +55,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle;text-align:justify">
               <heading><font size="5">Research Interests</font></heading>
               <p><font size="3">
-                I am interested in the interpretability of raw waveform based audio processing deep neural networks (DNNs) in the discrete-time audio input space, specifically the dynamics of how self-supervised representations differ from supervised ones. I believe that an amalgamation of visual and aural means of interpretation would work best for interpreting such models.
+                I am interested in explainability of raw waveform based deep acoustic models, specifically the dynamics of how self-supervised representations differ from supervised ones. I believe that an amalgamation of visual and aural means of interpretation would work best for interpreting such models.
               </font></p>
             </td>
           </tr>
@@ -83,7 +84,61 @@
 
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <!-- INTERSPEECH 2022 - Learning neural audio features without supervision -->
+          <tr onmouseout="inter22_0_stop()" onmouseover="inter22_0_start()">
+            <td style="padding:25px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='inter22_0_image'><img src='images/pub_inter22_0_re.png' width="150"></div>
+                <img src='images/pub_inter22_0_re.png' width="150">
+              </div>
+              <script type="text/javascript">
+                function inter22_0_start() {
+                  document.getElementById('inter22_0_image').style.opacity = "1";
+                }
 
+                function inter22_0_stop() {
+                  document.getElementById('inter22_0_image').style.opacity = "0";
+                }
+                inter22_0_stop()
+              </script>
+            </td>
+            <td style="padding:25px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/document/9054440" target="_blank">
+                <papertitle><font size="3">Learning neural audio features without supervision</font></papertitle>
+              </a>
+              <br>
+              <font size="3">
+              <strong><font size="3">Sarthak Yadav</font></strong>,
+              <a href="https://scholar.google.com/citations?user=fiJamZ0AAAAJ&hl=fr"><font size="3">Neil Zeghidour</font></a>
+              <br>
+              <em>Accepted for presentation at INTERSPEECH</em>, 2022
+              </font>
+              <br>
+              <p></p>
+              <a href="javascript:void(0);" onclick="myFunction('inter22_abs')"><font size="3">Abstract</font></a> /
+              <!-- <a href="https://arxiv.org/abs/1811.01401" target="_blank"><font size="3">arXiv</font></a> / -->
+              <a href="javascript:void(0);" onclick="myFunction('inter22_bib')"><font size="3">BibTex</font></a>
+              <p></p>
+              <div id="inter22_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
+                <em>
+                  Deep audio classification, traditionally cast as training a deep neural network on top of mel-filterbanks in a supervised fashion, has recently benefited from two independent lines of work. The first one explores ``learnable frontends'', i.e., neural modules that produce a learnable time-frequency representation, to overcome limitations of fixed features. The second one uses self-supervised learning to leverage unprecedented scales of pre-training data. In this work, we study the feasibility of combining both approaches, i.e., pre-training learnable frontend jointly with the main architecture for downstream classification. First, we show that pretraining two previously proposed frontends (SincNet and LEAF) on Audioset drastically improves linear-probe performance over fixed mel-filterbanks, suggesting that learnable time-frequency representations can benefit self-supervised pre-training even more than supervised training. Surprisingly, randomly initialized learnable filterbanks outperform mel-scaled initialization in the self-supervised setting, a counter-intuitive result that questions the appropriateness of strong priors when designing learnable filters. Through exploratory analysis of the learned frontend components, we uncover crucial differences in properties of these frontends when used in a supervised and self-supervised setting, especially the affinity of self-supervised filters to diverge significantly from the mel-scale to model a broader range of frequencies.
+                </em>
+              </font></div>
+              <div id="inter22_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
+                <br>
+                @misc{https://doi.org/10.48550/arxiv.2203.15519,
+                  doi = {10.48550/ARXIV.2203.15519},
+                  url = {https://arxiv.org/abs/2203.15519},
+                  author = {Yadav, Sarthak and Zeghidour, Neil},
+                  keywords = {Sound (cs.SD), Machine Learning (cs.LG), Audio and Speech Processing (eess.AS), FOS: Computer and information sciences, FOS: Computer and information sciences, FOS: Electrical engineering, electronic engineering, information engineering, FOS: Electrical engineering, electronic engineering, information engineering},
+                  title = {Learning neural audio features without supervision},
+                  publisher = {arXiv},
+                  year = {2022}, 
+                  copyright = {arXiv.org perpetual, non-exclusive license}
+                }                
+              </font></div>
+            </td>
+          </tr>
 
           <!-- ICASSP 2020 - Frequency and Temporal Convolutional Attention -->
           <tr onmouseout="icassp20_0_stop()" onmouseover="icassp20_0_start()">
@@ -259,13 +314,113 @@
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <br><br>
-              <heading><font size="5">Projects</font></heading>
+              <heading><font size="5">Projects and open-source contributions</font></heading>
             </td>
           </tr>
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="sb_stop()" onmouseover="sb_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='sb_image'><img width="150" src='https://camo.githubusercontent.com/784331b9f7face8b1f9db669c283c22f70ef82a7217b5dfa75c13d42b8f5875a/687474703a2f2f7777772e6461726e61756c742d706172636f6c6c65742e66722f506172636f6c6c65742f68696464656e6e6f73686172652f737065656368627261696e2e6769746875622e696f2f696d672f6c6f676f5f6e6f6e616d655f726f756e6465645f6269672e706e67'></div>
+                <img width="150" src='https://camo.githubusercontent.com/784331b9f7face8b1f9db669c283c22f70ef82a7217b5dfa75c13d42b8f5875a/687474703a2f2f7777772e6461726e61756c742d706172636f6c6c65742e66722f506172636f6c6c65742f68696464656e6e6f73686172652f737065656368627261696e2e6769746875622e696f2f696d672f6c6f676f5f6e6f6e616d655f726f756e6465645f6269672e706e67'>
+              </div>
+              <script type="text/javascript">
+                function sb_start() {
+                  document.getElementById('sb_image').style.opacity = "1";
+                }
+
+                function sb_stop() {
+                  document.getElementById('sb_image').style.opacity = "0";
+                }
+                sb_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle;text-align:justify">
+              <a href="https://github.com/speechbrain/speechbrain" target="_blank">
+                <papertitle><font size="3">Community Contributor, SpeechBrain</font></papertitle>
+              </a>
+              <br><br>
+              <font size="3">
+                As a community contributor, my PyTorch implementation of "<i>LEAF: A Learnable Frontend for Audio Classification</i>", by Zeghidour et al., 2021 was merged in SpeechBrain release v0.5.12.
+              </font>
+              <br>
+              <p></p>
+              <a href="https://github.com/speechbrain/speechbrain/pull/1364" target="_blank"><font size="3">Code</font></a> /
+              <a href="https://openreview.net/forum?id=jM76BCb6F9m" target="_blank"><font size="3">Paper</font></a>
+              <p></p>
+            </td>
+          </tr>
+
+          <!-- PROJECT - MAE jax -->
+          <tr onmouseout="proj_mae_stop()" onmouseover="proj_mae_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <!-- <div class="two" id='proj_leaf_image'><img src='images/specs_wide2_re.jpg'></div>
+                <img src='images/specs_wide2_re.jpg'> -->
+              </div>
+              <script type="text/javascript">
+                function proj_mae_start() {
+                  document.getElementById('proj_mae_image').style.opacity = "1";
+                }
+
+                function proj_mae_stop() {
+                  document.getElementById('proj_mae_image').style.opacity = "0";
+                }
+                proj_mae_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle;text-align:justify">
+              <a href="https://github.com/SarthakYadav/jax-mae" target="_blank">
+                <papertitle><font size="3">Masked Autoencoders in Jax</font></papertitle>
+              </a>
+              <br><br>
+              <font size="3">
+                <a href="https://jax.readthedocs.io/en/latest/"><font size="3">Jax</font></a>/<a href="https://github.com/google/flax"><font size="3">Flax</font></a> implementation of the paper "<i>Masked Autoencoders Are Scalable Vision Learners</i>", by He et al., 2021. Pre-trained models available soon!
+              </font>
+              <br>
+              <p></p>
+              <a href="https://github.com/SarthakYadav/jax-mae" target="_blank"><font size="3">Code</font></a> /
+              <a href="https://arxiv.org/abs/2111.06377" target="_blank"><font size="3">Paper</font></a>
+              <p></p>
+            </td>
+          </tr>
           
+          <!-- PROJECT - audax -->
+          <tr onmouseout="proj_audax_stop()" onmouseover="proj_audax_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <!-- <div class="two" id='proj_leaf_image'><img src='images/specs_wide2_re.jpg'></div>
+                <img src='images/specs_wide2_re.jpg'> -->
+              </div>
+              <script type="text/javascript">
+                function proj_audax_start() {
+                  document.getElementById('proj_mae_image').style.opacity = "1";
+                }
+
+                function proj_audax_stop() {
+                  document.getElementById('proj_mae_image').style.opacity = "0";
+                }
+                proj_audax_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle;text-align:justify">
+              <a href="https://github.com/SarthakYadav/audax" target="_blank">
+                <papertitle><font size="3">audax: a home for audio ML in Jax</font></papertitle>
+              </a>
+              <br><br>
+              <font size="3">
+                A home for audio ML in <a href="https://jax.readthedocs.io/en/latest/"><font size="3">Jax</font></a>. Has common features, popular learnable frontends (eg. <a href="https://arxiv.org/abs/1808.00158"><font size="3">SincNet</font></a>, <a href="https://openreview.net/forum?id=jM76BCb6F9m"><font size="3">LEAF</font></a>), and pretrained supervised and self-supervised (eg. <a href="https://arxiv.org/abs/2010.10915"><font size="3">COLA</font></a>) models. As opposed to popular frameworks, the objective is not to become an end-to-end, end-all-be-all DL framework, but instead to act as a starting point for doing things the jax way, through reference implementations and recipes, using the <a href="https://jax.readthedocs.io/en/latest/"><font size="3">Jax</font></a> / <a href="https://github.com/google/flax"><font size="3">Flax</font></a> / <a href="https://optax.readthedocs.io/en/latest/"><font size="3">Optax</font></a> stack.
+              </font>
+              <br>
+              <p></p>
+              <a href="https://github.com/SarthakYadav/audax" target="_blank"><font size="3">Code</font></a>
+              <!-- <a href="https://arxiv.org/abs/2111.06377" target="_blank"><font size="3">Paper</font></a> -->
+              <p></p>
+            </td>
+          </tr>
+
           <!-- PROJECT - LEAF pytorch -->
           <tr onmouseout="proj_leaf_stop()" onmouseover="proj_leaf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
