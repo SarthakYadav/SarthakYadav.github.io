@@ -41,6 +41,7 @@
                 <strong><font size="3"><i>Updates</i></font></strong>
                 <br/>
               </div>
+              [06/24] Latest paper on selective SSMs accepted to <a href="https://interspeech2024.org/">INTERSPEECH 2024</a><br/>
               [01/24] First paper of my PhD accepted at <a href="https://iclr.cc/">ICLR 2024</a><br/>
               [06/23] Awarded DeiC compute grant for access to the LUMI Supercomputer<br/>
               [10/22] Started as PhD Fellow at <a href="https://www.es.aau.dk/">ES-AAU</a>/<a href="https://di.ku.dk/ai-centre/">Pioneer Center for AI</a><br/>
@@ -85,21 +86,76 @@
         </script>
 
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!-- INTERSPEECH 2024 --->
+        <tr onmouseout="isca24_0_stop()" onmouseover="isca24_0_start()">
+          <!-- <td style="padding:25px;width:25%;vertical-align:middle"> -->
+          <td style="padding:25px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='interspeech24_image'><img src='images/ssam_webpage.png' width="150"></div>
+              <img src='images/ssam_webpage.png' width="150">
+            </div>
+            <script type="text/javascript">
+              function isca24_0_start() {
+                document.getElementById('interspeech24_image').style.opacity = "1";
+              }
+
+              function isca24_0_stop() {
+                document.getElementById('interspeech24_image').style.opacity = "0";
+              }
+              isca24_0_stop()
+            </script>
+          </td>
+          <td style="padding:25px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2406.02178" target="_blank">
+              <papertitle><font size="3">Audio Mamba: Selective State Spaces for Self-Supervised Audio Representations</font></papertitle>
+            </a>
+            <br>
+            <font size="3">
+            <strong><font>Sarthak Yadav</font></strong>  and <a href="https://scholar.google.com/citations?user=fugL2E8AAAAJ&hl=en">Zheng-Hua Tan</a>
+            <br>
+            <em> To appear in Proc. INTERSPEECH</em>, 2024
+            </font>
+            <br>
+            <p></p>
+            <a href="javascript:void(0);" onclick="myFunction('isca2024_abs')"><font size="3">Abstract</font></a> /
+            <a href="javascript:void(0);" onclick="myFunction('isca2024_bib')"><font size="3">BibTex</font></a> /
+            <a href="https://github.com/SarthakYadav/audio-mamba-official"><font size="3">Code</font></a>
+            <p></p>
+            <div id="isca2024_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
+              <em>
+                Despite its widespread adoption as the prominent neural architecture, the Transformer has spurred several independent lines of work to address its limitations. One such approach is selective state space models, which have demonstrated promising results for language modelling. However, their feasibility for learning self-supervised, general-purpose audio representations is yet to be investigated. This work proposes Audio Mamba, a selective state space model for learning general-purpose audio representations from randomly masked spectrogram patches through self-supervision. Empirical results on ten diverse audio recognition downstream tasks show that the proposed models, pretrained on the AudioSet dataset, consistently outperform comparable self-supervised audio spectrogram transformer (SSAST) baselines by a considerable margin and demonstrate better performance in dataset size, sequence length and model size comparisons.
+              </em>
+            </font></div>
+            <div id="isca2024_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
+              <br>
+              @misc{yadav2024audio,
+                title={Audio Mamba: Selective State Spaces for Self-Supervised Audio Representations}, 
+                author={Sarthak Yadav and Zheng-Hua Tan},
+                year={2024},
+                eprint={2406.02178},
+                archivePrefix={arXiv},
+                primaryClass={id='cs.SD' full_name='Sound' is_active=True alt_name=None in_archive='cs' is_general=False description='Covers all aspects of computing with sound, and sound as an information channel. Includes models of sound, analysis and synthesis, audio user interfaces, sonification of data, computer music, and sound signal processing. Includes ACM Subject Class H.5.5, and intersects with H.1.2, H.5.1, H.5.2, I.2.7, I.5.4, I.6.3, J.5, K.4.2.'}
+              }                          
+            </font></div>
+          </td>
+        </tr>
+        
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <!-- ICLR 2024 --->
         <tr onmouseout="iclr24_0_stop()" onmouseover="iclr24_0_start()">
           <!-- <td style="padding:25px;width:25%;vertical-align:middle"> -->
           <td style="padding:25px;width:25%;vertical-align:middle">
             <div class="one">
-              <div class="two" id='icassp23_image'><img src='images/iclr-navbar-logo.svg' width="150"></div>
+              <div class="two" id='iclr24_image'><img src='images/iclr-navbar-logo.svg' width="150"></div>
               <img src='images/iclr-navbar-logo.svg' width="150">
             </div>
             <script type="text/javascript">
               function iclr24_0_start() {
-                document.getElementById('icassp23_image').style.opacity = "1";
+                document.getElementById('iclr24_image').style.opacity = "1";
               }
 
               function iclr24_0_stop() {
-                document.getElementById('icassp23_image').style.opacity = "0";
+                document.getElementById('iclr24_image').style.opacity = "0";
               }
               iclr24_0_stop()
             </script>
