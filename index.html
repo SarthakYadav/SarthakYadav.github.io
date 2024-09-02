@@ -20,7 +20,6 @@
               <p style="text-align:left">
                 <name><font size="8">Sarthak Yadav</font></name>
                 <br>
-                <!-- <font size="3"><br/>Learning to teach machines how to learn.</font> -->
               </p>
               <br/>
               <p align="justify"><font size="3">
@@ -86,6 +85,60 @@
         </script>
 
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!-- ICASSP 2025 --->
+        <tr onmouseout="icassp25_0_stop()" onmouseover="icassp25_0_start()">
+          <td style="padding:25px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='icassp2025_image'><img src='images/axlstm_webpage.png' width="150"></div>
+              <img src='images/axlstm_webpage.png' width="150">
+            </div>
+            <script type="text/javascript">
+              function icassp25_0_start() {
+                document.getElementById('icassp2025_image').style.opacity = "1";
+              }
+
+              function icassp25_0_stop() {
+                document.getElementById('icassp2025_image').style.opacity = "0";
+              }
+              icassp25_0_start()
+            </script>
+          </td>
+          <td style="padding:25px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2406.02178" target="_blank">
+              <papertitle><font size="3">Audio xLSTMs: Learning Self-Supervised Audio Representations with xLSTMs</font></papertitle>
+            </a>
+            <br>
+            <font size="3">
+            <strong><font>Sarthak Yadav</font></strong>, <a href="https://scholar.google.com/citations?user=3dBjdv4AAAAJ&hl=en">Sergios Theodoridis</a> and <a href="https://scholar.google.com/citations?user=fugL2E8AAAAJ&hl=en">Zheng-Hua Tan</a>
+            <br>
+            <em> Submitted to ICASSP 2025</em>
+            </font>
+            <br>
+            <p></p>
+            <a href="javascript:void(0);" onclick="myFunction('icassp2025_abs')"><font size="3">Abstract</font></a> /
+            <a href="javascript:void(0);" onclick="myFunction('icassp2025_bib')"><font size="3">BibTex</font></a> /
+            <a href="https://github.com/SarthakYadav/axlstm-official"><font size="3">Code</font></a>
+            <p></p>
+            <div id="icassp2025_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
+              <em>
+                While the transformer has emerged as the eminent neural architecture, several independent lines of research have emerged to address its limitations. Recurrent neural approaches have also observed a lot of renewed interest, including the extended long short-term memory (xLSTM) architecture, which reinvigorates the original LSTM architecture. However, while xLSTMs have shown competitive performance compared to the transformer, their viability for learning self-supervised general-purpose audio representations has not yet been evaluated. This work proposes Audio xLSTM (AxLSTM), an approach to learn audio representations from masked spectrogram patches in a self-supervised setting. Pretrained on the AudioSet dataset, the proposed AxLSTM models outperform comparable self-supervised audio spectrogram transformer (SSAST) baselines by up to 20% in relative performance across a set of ten diverse downstream tasks while having up to 45% fewer parameters.
+              </em>
+            </font></div>
+            <div id="icassp2025_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
+              <br>
+              @misc{yadav2024audioxlstmslearningselfsupervised,
+                title={Audio xLSTMs: Learning Self-supervised audio representations with xLSTMs}, 
+                author={Sarthak Yadav and Sergios Theodoridis and Zheng-Hua Tan},
+                year={2024},
+                eprint={2408.16568},
+                archivePrefix={arXiv},
+                primaryClass={cs.SD},
+                url={https://arxiv.org/abs/2408.16568}, 
+              }                        
+            </font></div>
+          </td>
+        </tr>
+
         <!-- INTERSPEECH 2024 --->
         <tr onmouseout="isca24_0_stop()" onmouseover="isca24_0_start()">
           <!-- <td style="padding:25px;width:25%;vertical-align:middle"> -->
@@ -106,14 +159,14 @@
             </script>
           </td>
           <td style="padding:25px;width:75%;vertical-align:middle">
-            <a href="https://arxiv.org/abs/2406.02178" target="_blank">
+            <a href="https://www.isca-archive.org/interspeech_2024/yadav24_interspeech.html" target="_blank">
               <papertitle><font size="3">Audio Mamba: Selective State Spaces for Self-Supervised Audio Representations</font></papertitle>
             </a>
             <br>
             <font size="3">
             <strong><font>Sarthak Yadav</font></strong>  and <a href="https://scholar.google.com/citations?user=fugL2E8AAAAJ&hl=en">Zheng-Hua Tan</a>
             <br>
-            <em> To appear in Proc. INTERSPEECH</em>, 2024
+            <em> INTERSPEECH</em>, 2024
             </font>
             <br>
             <p></p>
@@ -128,19 +181,18 @@
             </font></div>
             <div id="isca2024_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
               <br>
-              @misc{yadav2024audio,
-                title={Audio Mamba: Selective State Spaces for Self-Supervised Audio Representations}, 
-                author={Sarthak Yadav and Zheng-Hua Tan},
-                year={2024},
-                eprint={2406.02178},
-                archivePrefix={arXiv},
-                primaryClass={id='cs.SD' full_name='Sound' is_active=True alt_name=None in_archive='cs' is_general=False description='Covers all aspects of computing with sound, and sound as an information channel. Includes models of sound, analysis and synthesis, audio user interfaces, sonification of data, computer music, and sound signal processing. Includes ACM Subject Class H.5.5, and intersects with H.1.2, H.5.1, H.5.2, I.2.7, I.5.4, I.6.3, J.5, K.4.2.'}
-              }                          
+              @inproceedings{yadav24_interspeech,
+                title     = {Audio Mamba: Selective State Spaces for Self-Supervised Audio Representations},
+                author    = {Sarthak Yadav and Zheng-Hua Tan},
+                year      = {2024},
+                booktitle = {Interspeech 2024},
+                pages     = {552--556},
+                doi       = {10.21437/Interspeech.2024-1274},
+              }                       
             </font></div>
           </td>
         </tr>
-        
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
         <!-- ICLR 2024 --->
         <tr onmouseout="iclr24_0_stop()" onmouseover="iclr24_0_start()">
           <!-- <td style="padding:25px;width:25%;vertical-align:middle"> -->
@@ -195,341 +247,339 @@
           </td>
         </tr>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <!-- ICASSP 2023 --->
-          <tr onmouseout="icassp23_0_stop()" onmouseover="icassp23_0_start()">
-            <td style="padding:25px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='icassp23_image'><img src='images/icassp2023.jpeg' width="150"></div>
-                <img src='images/icassp2023.jpeg' width="150">
-              </div>
-              <script type="text/javascript">
-                function icassp23_0_start() {
-                  document.getElementById('icassp23_image').style.opacity = "1";
-                }
+        <!-- ICASSP 2023 --->
+        <tr onmouseout="icassp23_0_stop()" onmouseover="icassp23_0_start()">
+          <td style="padding:25px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='icassp23_image'><img src='images/icassp2023.jpeg' width="150"></div>
+              <img src='images/icassp2023.jpeg' width="150">
+            </div>
+            <script type="text/javascript">
+              function icassp23_0_start() {
+                document.getElementById('icassp23_image').style.opacity = "1";
+              }
 
-                function icassp23_0_stop() {
-                  document.getElementById('icassp23_image').style.opacity = "0";
-                }
-                icassp23_0_stop()
-              </script>
-            </td>
-            <td style="padding:25px;width:75%;vertical-align:middle">
-              <a href="https://ieeexplore.ieee.org/document/10095892" target="_blank">
-                <papertitle><font size="3">Towards learning emotion information from short segments of speech</font></papertitle>
-              </a>
+              function icassp23_0_stop() {
+                document.getElementById('icassp23_image').style.opacity = "0";
+              }
+              icassp23_0_stop()
+            </script>
+          </td>
+          <td style="padding:25px;width:75%;vertical-align:middle">
+            <a href="https://ieeexplore.ieee.org/document/10095892" target="_blank">
+              <papertitle><font size="3">Towards learning emotion information from short segments of speech</font></papertitle>
+            </a>
+            <br>
+            <font size="3">
+            <a href="https://scholar.google.com/citations?user=PQARTc0AAAAJ&hl=en">Tilak Purohit</a>, <strong><font>Sarthak Yadav</font></strong>, <a href="https://scholar.google.com/citations?user=HjTmhhgAAAAJ&hl=en">Bogdan Vlasenko</a>, <a href="https://scholar.google.com/citations?user=--k6n58AAAAJ&hl=en&oi=ao">S. Pavankumar Dubagunta</a>,  and <a href="https://www.idiap.ch/en/people/directory/110">Mathew Magimai Doss</a>
+            <br>
+            <em>IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)</em>, 2023
+            </font>
+            <br>
+            <p></p>
+            <a href="javascript:void(0);" onclick="myFunction('icassp2023_abs')"><font size="3">Abstract</font></a> /
+            <a href="javascript:void(0);" onclick="myFunction('icassp2023_bib')"><font size="3">BibTex</font></a>
+            <p></p>
+            <div id="icassp2023_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
+              <em>
+                Conventionally, speech emotion recognition has been approached by utterance or turn-level modelling of input signals, either through extracting hand-crafted low-level descriptors, bag-of-audio-words features or by feeding long-duration signals directly to deep neural networks (DNNs). While this approach has been successful, there is a growing interest in modeling speech emotion information at short segment level, at around 250ms-500ms (e.g. the 2021-22 MuSe Challenges). This paper investigates both hand-crafted feature-based and end-to-end raw waveform DNN approaches for modeling speech emotion information in such short segments. Through experimental studies on IEMOCAP corpus, we demonstrate that the end-to-end raw waveform modeling approach is more effective than using hand-crafted features for short segment level modelling. Furthermore, through relevance signal-based analysis of the trained neural networks, we observe that the top performing end-to-end approach tends to emphasize cepstral information instead of spectral information (such as flux and harmonicity).
+              </em>
+            </font></div>
+            <div id="icassp2023_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
               <br>
-              <font size="3">
-              <a href="https://scholar.google.com/citations?user=PQARTc0AAAAJ&hl=en">Tilak Purohit</a>, <strong><font>Sarthak Yadav</font></strong>, <a href="https://scholar.google.com/citations?user=HjTmhhgAAAAJ&hl=en">Bogdan Vlasenko</a>, <a href="https://scholar.google.com/citations?user=--k6n58AAAAJ&hl=en&oi=ao">S. Pavankumar Dubagunta</a>,  and <a href="https://www.idiap.ch/en/people/directory/110">Mathew Magimai Doss</a>
-              <br>
-              <em>IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)</em>, 2023
-              </font>
-              <br>
-              <p></p>
-              <a href="javascript:void(0);" onclick="myFunction('icassp2023_abs')"><font size="3">Abstract</font></a> /
-              <a href="javascript:void(0);" onclick="myFunction('icassp2023_bib')"><font size="3">BibTex</font></a>
-              <p></p>
-              <div id="icassp2023_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
-                <em>
-                  Conventionally, speech emotion recognition has been approached by utterance or turn-level modelling of input signals, either through extracting hand-crafted low-level descriptors, bag-of-audio-words features or by feeding long-duration signals directly to deep neural networks (DNNs). While this approach has been successful, there is a growing interest in modeling speech emotion information at short segment level, at around 250ms-500ms (e.g. the 2021-22 MuSe Challenges). This paper investigates both hand-crafted feature-based and end-to-end raw waveform DNN approaches for modeling speech emotion information in such short segments. Through experimental studies on IEMOCAP corpus, we demonstrate that the end-to-end raw waveform modeling approach is more effective than using hand-crafted features for short segment level modelling. Furthermore, through relevance signal-based analysis of the trained neural networks, we observe that the top performing end-to-end approach tends to emphasize cepstral information instead of spectral information (such as flux and harmonicity).
-                </em>
-              </font></div>
-              <div id="icassp2023_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
-                <br>
-                @INPROCEEDINGS{10095892,
-                  author={Purohit, Tilak and Yadav, Sarthak and Vlasenko, Bogdan and Dubagunta, S. Pavankumar and Magimai.-Doss, Mathew},
-                  booktitle={ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
-                  title={Towards Learning Emotion Information from Short Segments of Speech}, 
-                  year={2023},
-                  volume={},
-                  number={},
-                  pages={1-5},
-                  keywords={Deep learning;Emotion recognition;Cepstral analysis;Computational modeling;Neural networks;Anxiety disorders;Speech recognition;Speech Emotion Recognition;Convolution Neural Network;End-to-End modelling},
-                  doi={10.1109/ICASSP49357.2023.10095892}
-                }                              
-              </font></div>
-            </td>
-          </tr>
+              @INPROCEEDINGS{10095892,
+                author={Purohit, Tilak and Yadav, Sarthak and Vlasenko, Bogdan and Dubagunta, S. Pavankumar and Magimai.-Doss, Mathew},
+                booktitle={ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+                title={Towards Learning Emotion Information from Short Segments of Speech}, 
+                year={2023},
+                volume={},
+                number={},
+                pages={1-5},
+                keywords={Deep learning;Emotion recognition;Cepstral analysis;Computational modeling;Neural networks;Anxiety disorders;Speech recognition;Speech Emotion Recognition;Convolution Neural Network;End-to-End modelling},
+                doi={10.1109/ICASSP49357.2023.10095892}
+              }                              
+            </font></div>
+          </td>
+        </tr>
           
-          <!-- ACM Multimedia/MuSe 2022 -->
-          <tr onmouseout="muse22_0_start()" onmouseover="muse22_0_stop()">
-            <td style="padding:25px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='muse22_0_image'><img src='images/MuSe2022.jpg' width="150"></div>
-                <img src='images/MuSe2022.jpg' width="150">
-              </div>
-              <script type="text/javascript">
-                function muse22_0_start() {
-                  document.getElementById('muse22_0_image').style.opacity = "1";
-                }
+        <!-- ACM Multimedia/MuSe 2022 -->
+        <tr onmouseout="muse22_0_start()" onmouseover="muse22_0_stop()">
+          <td style="padding:25px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='muse22_0_image'><img src='images/MuSe2022.jpg' width="150"></div>
+              <img src='images/MuSe2022.jpg' width="150">
+            </div>
+            <script type="text/javascript">
+              function muse22_0_start() {
+                document.getElementById('muse22_0_image').style.opacity = "1";
+              }
 
-                function muse22_0_stop() {
-                  document.getElementById('muse22_0_image').style.opacity = "0";
-                }
-                muse22_0_stop()
-              </script>
-            </td>
-            <td style="padding:25px;width:75%;vertical-align:middle">
-              <a href="https://dl.acm.org/doi/abs/10.1145/3551876.3554812" target="_blank">
-                <papertitle><font size="3">Comparing Biosignal and Acoustic feature Representation for Continuous Emotion Recognition</font></papertitle>
-              </a>
+              function muse22_0_stop() {
+                document.getElementById('muse22_0_image').style.opacity = "0";
+              }
+              muse22_0_stop()
+            </script>
+          </td>
+          <td style="padding:25px;width:75%;vertical-align:middle">
+            <a href="https://dl.acm.org/doi/abs/10.1145/3551876.3554812" target="_blank">
+              <papertitle><font size="3">Comparing Biosignal and Acoustic feature Representation for Continuous Emotion Recognition</font></papertitle>
+            </a>
+            <br>
+            <font size="3">
+            <strong><font>Sarthak Yadav</font></strong>, <a href="https://scholar.google.com/citations?user=PQARTc0AAAAJ&hl=en">Tilak Purohit</a>, <a href="https://scholar.google.com/citations?user=t2VMpU8AAAAJ&hl=en">Zohreh Mostaani</a>, <a href="https://scholar.google.com/citations?user=HjTmhhgAAAAJ&hl=en">Bogdan Vlasenko</a> and <a href="https://www.idiap.ch/en/people/directory/110">Mathew Magimai Doss</a>
+            <br>
+            <em>Proceedings of the 3rd International on Multimodal Sentiment Analysis Workshop and Challenge @ The 30th ACM International Conference on Multimedia</em>, 2022
+            </font>
+            <br>
+            <p></p>
+            <a href="javascript:void(0);" onclick="myFunction('muse22_abs')"><font size="3">Abstract</font></a> /
+            <!-- <a href="https://arxiv.org/abs/1811.01401" target="_blank"><font size="3">arXiv</font></a> / -->
+            <a href="javascript:void(0);" onclick="myFunction('muse22_bib')"><font size="3">BibTex</font></a>
+            <p></p>
+            <div id="muse22_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
+              <em>
+                Automatic recognition of human emotion has a wide range of applications. Human emotions can be identified across different modalities, such as biosignal, speech, text, and mimics. This paper is focusing on time-continuous prediction of level of valence and psycho-physiological arousal. In that regard, we investigate, (a) the use of different feature embeddings obtained from neural networks pre-trained on different speech tasks (e.g., phone classification, speech emotion recognition) and self-supervised neural networks, (b) estimation of arousal and valence from physiological signals in an end-to-end manner and (c) combining different neural embeddings. Our investigations on the MuSe-Stress sub-challenge shows that (a) the embeddings extracted from physiological signals using CNNs trained in an end-to-end manner improves over the baseline approach of modeling physiological signals, (b) neural embeddings obtained from phone classification neural network and speech emotion recognition neural network trained on auxiliary language data sets yield improvement over baseline systems purely trained on the target data, and (c) task-specific neural embeddings yield improved performance over self-supervised neural embeddings for both arousal and valence. Our best performing system on test-set surpass the DeepSpectrum baseline (combined score) by a relative 7.7% margin.
+              </em>
+            </font></div>
+            <div id="muse22_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
               <br>
-              <font size="3">
-              <strong><font>Sarthak Yadav</font></strong>, <a href="https://scholar.google.com/citations?user=PQARTc0AAAAJ&hl=en">Tilak Purohit</a>, <a href="https://scholar.google.com/citations?user=t2VMpU8AAAAJ&hl=en">Zohreh Mostaani</a>, <a href="https://scholar.google.com/citations?user=HjTmhhgAAAAJ&hl=en">Bogdan Vlasenko</a> and <a href="https://www.idiap.ch/en/people/directory/110">Mathew Magimai Doss</a>
-              <br>
-              <em>Proceedings of the 3rd International on Multimodal Sentiment Analysis Workshop and Challenge @ The 30th ACM International Conference on Multimedia</em>, 2022
-              </font>
-              <br>
-              <p></p>
-              <a href="javascript:void(0);" onclick="myFunction('muse22_abs')"><font size="3">Abstract</font></a> /
-              <!-- <a href="https://arxiv.org/abs/1811.01401" target="_blank"><font size="3">arXiv</font></a> / -->
-              <a href="javascript:void(0);" onclick="myFunction('muse22_bib')"><font size="3">BibTex</font></a>
-              <p></p>
-              <div id="muse22_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
-                <em>
-                  Automatic recognition of human emotion has a wide range of applications. Human emotions can be identified across different modalities, such as biosignal, speech, text, and mimics. This paper is focusing on time-continuous prediction of level of valence and psycho-physiological arousal. In that regard, we investigate, (a) the use of different feature embeddings obtained from neural networks pre-trained on different speech tasks (e.g., phone classification, speech emotion recognition) and self-supervised neural networks, (b) estimation of arousal and valence from physiological signals in an end-to-end manner and (c) combining different neural embeddings. Our investigations on the MuSe-Stress sub-challenge shows that (a) the embeddings extracted from physiological signals using CNNs trained in an end-to-end manner improves over the baseline approach of modeling physiological signals, (b) neural embeddings obtained from phone classification neural network and speech emotion recognition neural network trained on auxiliary language data sets yield improvement over baseline systems purely trained on the target data, and (c) task-specific neural embeddings yield improved performance over self-supervised neural embeddings for both arousal and valence. Our best performing system on test-set surpass the DeepSpectrum baseline (combined score) by a relative 7.7% margin.
-                </em>
-              </font></div>
-              <div id="muse22_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
-                <br>
-                @inproceedings{10.1145/3551876.3554812,
-                  author = {Yadav, Sarthak and Purohit, Tilak and Mostaani, Zohreh and Vlasenko, Bogdan and Magimai.-Doss, Mathew},
-                  title = {Comparing Biosignal and Acoustic Feature Representation for Continuous Emotion Recognition},
-                  year = {2022},
-                  isbn = {9781450394840},
-                  publisher = {Association for Computing Machinery},
-                  address = {New York, NY, USA},
-                  url = {https://doi.org/10.1145/3551876.3554812},
-                  doi = {10.1145/3551876.3554812},
-                  abstract = {Automatic recognition of human emotion has a wide range of applications. Human emotions can be identified across different modalities, such as biosignal, speech, text, and mimics. This paper is focusing on time-continuous prediction of level of valence and psycho-physiological arousal. In that regard, we investigate, (a) the use of different feature embeddings obtained from neural networks pre-trained on different speech tasks (e.g., phone classification, speech emotion recognition) and self-supervised neural networks, (b) estimation of arousal and valence from physiological signals in an end-to-end manner and (c) combining different neural embeddings. Our investigations on the MuSe-Stress sub-challenge shows that (a) the embeddings extracted from physiological signals using CNNs trained in an end-to-end manner improves over the baseline approach of modeling physiological signals, (b) neural embeddings obtained from phone classification neural network and speech emotion recognition neural network trained on auxiliary language data sets yield improvement over baseline systems purely trained on the target data, and (c) task-specific neural embeddings yield improved performance over self-supervised neural embeddings for both arousal and valence. Our best performing system on test-set surpass the DeepSpectrum baseline (combined score) by a relative 7.7\% margin},
-                  booktitle = {Proceedings of the 3rd International on Multimodal Sentiment Analysis Workshop and Challenge},
-                  pages = {37–45},
-                  numpages = {9},
-                  keywords = {modalities fusion, emotion recognition, self-supervised embedding, pre-trained embedding, breathing patterns},
-                  location = {Lisboa, Portugal},
-                  series = {MuSe' 22}
-                }                
-              </font></div>
-            </td>
-          </tr>
+              @inproceedings{10.1145/3551876.3554812,
+                author = {Yadav, Sarthak and Purohit, Tilak and Mostaani, Zohreh and Vlasenko, Bogdan and Magimai.-Doss, Mathew},
+                title = {Comparing Biosignal and Acoustic Feature Representation for Continuous Emotion Recognition},
+                year = {2022},
+                isbn = {9781450394840},
+                publisher = {Association for Computing Machinery},
+                address = {New York, NY, USA},
+                url = {https://doi.org/10.1145/3551876.3554812},
+                doi = {10.1145/3551876.3554812},
+                abstract = {Automatic recognition of human emotion has a wide range of applications. Human emotions can be identified across different modalities, such as biosignal, speech, text, and mimics. This paper is focusing on time-continuous prediction of level of valence and psycho-physiological arousal. In that regard, we investigate, (a) the use of different feature embeddings obtained from neural networks pre-trained on different speech tasks (e.g., phone classification, speech emotion recognition) and self-supervised neural networks, (b) estimation of arousal and valence from physiological signals in an end-to-end manner and (c) combining different neural embeddings. Our investigations on the MuSe-Stress sub-challenge shows that (a) the embeddings extracted from physiological signals using CNNs trained in an end-to-end manner improves over the baseline approach of modeling physiological signals, (b) neural embeddings obtained from phone classification neural network and speech emotion recognition neural network trained on auxiliary language data sets yield improvement over baseline systems purely trained on the target data, and (c) task-specific neural embeddings yield improved performance over self-supervised neural embeddings for both arousal and valence. Our best performing system on test-set surpass the DeepSpectrum baseline (combined score) by a relative 7.7\% margin},
+                booktitle = {Proceedings of the 3rd International on Multimodal Sentiment Analysis Workshop and Challenge},
+                pages = {37–45},
+                numpages = {9},
+                keywords = {modalities fusion, emotion recognition, self-supervised embedding, pre-trained embedding, breathing patterns},
+                location = {Lisboa, Portugal},
+                series = {MuSe' 22}
+              }                
+            </font></div>
+          </td>
+        </tr>
 
-          <!-- INTERSPEECH 2022 - Learning neural audio features without supervision -->
-          <tr onmouseout="inter22_0_stop()" onmouseover="inter22_0_start()">
-            <td style="padding:25px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='inter22_0_image'><img src='images/pub_inter22_0_re.png' width="150"></div>
-                <img src='images/pub_inter22_0_re.png' width="150">
-              </div>
-              <script type="text/javascript">
-                function inter22_0_start() {
-                  document.getElementById('inter22_0_image').style.opacity = "1";
-                }
+        <!-- INTERSPEECH 2022 - Learning neural audio features without supervision -->
+        <tr onmouseout="inter22_0_stop()" onmouseover="inter22_0_start()">
+          <td style="padding:25px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='inter22_0_image'><img src='images/pub_inter22_0_re.png' width="150"></div>
+              <img src='images/pub_inter22_0_re.png' width="150">
+            </div>
+            <script type="text/javascript">
+              function inter22_0_start() {
+                document.getElementById('inter22_0_image').style.opacity = "1";
+              }
 
-                function inter22_0_stop() {
-                  document.getElementById('inter22_0_image').style.opacity = "0";
-                }
-                inter22_0_stop()
-              </script>
-            </td>
-            <td style="padding:25px;width:75%;vertical-align:middle">
-              <a href="https://www.isca-speech.org/archive/interspeech_2022/yadav22_interspeech.html" target="_blank">
-                <papertitle><font size="3">Learning neural audio features without supervision</font></papertitle>
-              </a>
+              function inter22_0_stop() {
+                document.getElementById('inter22_0_image').style.opacity = "0";
+              }
+              inter22_0_stop()
+            </script>
+          </td>
+          <td style="padding:25px;width:75%;vertical-align:middle">
+            <a href="https://www.isca-speech.org/archive/interspeech_2022/yadav22_interspeech.html" target="_blank">
+              <papertitle><font size="3">Learning neural audio features without supervision</font></papertitle>
+            </a>
+            <br>
+            <strong>Sarthak Yadav</strong>, <a href="https://scholar.google.com/citations?user=fiJamZ0AAAAJ&hl=fr"><font>Neil Zeghidour</font></a>
+            <br>
+            <font size="3">
+            <em>INTERSPEECH 2022</em>
+            </font>
+            <br>
+            <p></p>
+            <a href="javascript:void(0);" onclick="myFunction('inter22_abs')"><font size="3">Abstract</font></a> /
+            <!-- <a href="https://arxiv.org/abs/1811.01401" target="_blank"><font size="3">arXiv</font></a> / -->
+            <a href="javascript:void(0);" onclick="myFunction('inter22_bib')"><font size="3">BibTex</font></a>
+            <p></p>
+            <div id="inter22_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
+              <em>
+                Deep audio classification, traditionally cast as training a deep neural network on top of mel-filterbanks in a supervised fashion, has recently benefited from two independent lines of work. The first one explores ``learnable frontends'', i.e., neural modules that produce a learnable time-frequency representation, to overcome limitations of fixed features. The second one uses self-supervised learning to leverage unprecedented scales of pre-training data. In this work, we study the feasibility of combining both approaches, i.e., pre-training learnable frontend jointly with the main architecture for downstream classification. First, we show that pretraining two previously proposed frontends (SincNet and LEAF) on Audioset drastically improves linear-probe performance over fixed mel-filterbanks, suggesting that learnable time-frequency representations can benefit self-supervised pre-training even more than supervised training. Surprisingly, randomly initialized learnable filterbanks outperform mel-scaled initialization in the self-supervised setting, a counter-intuitive result that questions the appropriateness of strong priors when designing learnable filters. Through exploratory analysis of the learned frontend components, we uncover crucial differences in properties of these frontends when used in a supervised and self-supervised setting, especially the affinity of self-supervised filters to diverge significantly from the mel-scale to model a broader range of frequencies.
+              </em>
+            </font></div>
+            <div id="inter22_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
               <br>
-              <strong>Sarthak Yadav</strong>, <a href="https://scholar.google.com/citations?user=fiJamZ0AAAAJ&hl=fr"><font>Neil Zeghidour</font></a>
-              <br>
-              <font size="3">
-              <em>INTERSPEECH 2022</em>
-              </font>
-              <br>
-              <p></p>
-              <a href="javascript:void(0);" onclick="myFunction('inter22_abs')"><font size="3">Abstract</font></a> /
-              <!-- <a href="https://arxiv.org/abs/1811.01401" target="_blank"><font size="3">arXiv</font></a> / -->
-              <a href="javascript:void(0);" onclick="myFunction('inter22_bib')"><font size="3">BibTex</font></a>
-              <p></p>
-              <div id="inter22_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
-                <em>
-                  Deep audio classification, traditionally cast as training a deep neural network on top of mel-filterbanks in a supervised fashion, has recently benefited from two independent lines of work. The first one explores ``learnable frontends'', i.e., neural modules that produce a learnable time-frequency representation, to overcome limitations of fixed features. The second one uses self-supervised learning to leverage unprecedented scales of pre-training data. In this work, we study the feasibility of combining both approaches, i.e., pre-training learnable frontend jointly with the main architecture for downstream classification. First, we show that pretraining two previously proposed frontends (SincNet and LEAF) on Audioset drastically improves linear-probe performance over fixed mel-filterbanks, suggesting that learnable time-frequency representations can benefit self-supervised pre-training even more than supervised training. Surprisingly, randomly initialized learnable filterbanks outperform mel-scaled initialization in the self-supervised setting, a counter-intuitive result that questions the appropriateness of strong priors when designing learnable filters. Through exploratory analysis of the learned frontend components, we uncover crucial differences in properties of these frontends when used in a supervised and self-supervised setting, especially the affinity of self-supervised filters to diverge significantly from the mel-scale to model a broader range of frequencies.
-                </em>
-              </font></div>
-              <div id="inter22_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
-                <br>
-                @inproceedings{yadav22_interspeech,
-                  author={Sarthak Yadav and Neil Zeghidour},
-                  title={{Learning neural audio features without supervision}},
-                  year=2022,
-                  booktitle={Proc. Interspeech 2022},
-                  pages={396--400},
-                  doi={10.21437/Interspeech.2022-10834}
-                }                
-              </font></div>
-            </td>
-          </tr>
+              @inproceedings{yadav22_interspeech,
+                author={Sarthak Yadav and Neil Zeghidour},
+                title={{Learning neural audio features without supervision}},
+                year=2022,
+                booktitle={Proc. Interspeech 2022},
+                pages={396--400},
+                doi={10.21437/Interspeech.2022-10834}
+              }                
+            </font></div>
+          </td>
+        </tr>
 
-          <!-- ICASSP 2020 - Frequency and Temporal Convolutional Attention -->
-          <tr onmouseout="icassp20_0_stop()" onmouseover="icassp20_0_start()">
-            <td style="padding:25px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='icassp20_0_image'><img src='images/pub_icassp20_0_re.jpg'></div>
-                <img src='images/pub_icassp20_0_re.jpg'>
-              </div>
-              <script type="text/javascript">
-                function icassp20_0_start() {
-                  document.getElementById('icassp20_0_image').style.opacity = "1";
-                }
+        <!-- ICASSP 2020 - Frequency and Temporal Convolutional Attention -->
+        <tr onmouseout="icassp20_0_stop()" onmouseover="icassp20_0_start()">
+          <td style="padding:25px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='icassp20_0_image'><img src='images/pub_icassp20_0_re.jpg'></div>
+              <img src='images/pub_icassp20_0_re.jpg'>
+            </div>
+            <script type="text/javascript">
+              function icassp20_0_start() {
+                document.getElementById('icassp20_0_image').style.opacity = "1";
+              }
 
-                function icassp20_0_stop() {
-                  document.getElementById('icassp20_0_image').style.opacity = "0";
-                }
-                icassp20_0_stop()
-              </script>
-            </td>
-            <td style="padding:25px;width:75%;vertical-align:middle">
-              <a href="https://ieeexplore.ieee.org/document/9054440" target="_blank">
-                <papertitle><font size="3">Frequency and Temporal Convolutional Attention for Text-Independent Speaker Recognition</font></papertitle>
-              </a>
+              function icassp20_0_stop() {
+                document.getElementById('icassp20_0_image').style.opacity = "0";
+              }
+              icassp20_0_stop()
+            </script>
+          </td>
+          <td style="padding:25px;width:75%;vertical-align:middle">
+            <a href="https://ieeexplore.ieee.org/document/9054440" target="_blank">
+              <papertitle><font size="3">Frequency and Temporal Convolutional Attention for Text-Independent Speaker Recognition</font></papertitle>
+            </a>
+            <br>
+            
+            <strong>Sarthak Yadav</strong>, Atul Rai
+            <br>
+            <font size="3">
+            <em>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</em>, 2020
+            </font>
+            <br>
+            <p></p>
+            <a href="javascript:void(0);" onclick="myFunction('icassp20_abs')"><font size="3">Abstract</font></a> /
+            <!-- <a href="https://arxiv.org/abs/1811.01401" target="_blank"><font size="3">arXiv</font></a> / -->
+            <a href="javascript:void(0);" onclick="myFunction('icassp20_bib')"><font size="3">BibTex</font></a>
+            <p></p>
+            <div id="icassp20_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
+              <em>
+                Majority of the recent approaches for text-independent speaker recognition apply attention or similar techniques for aggregation of frame-level feature descriptors generated by a deep neural network (DNN) front-end. In this paper, we propose methods of convolutional attention for independently modelling temporal and frequency information in a convolutional neural network (CNN) based front-end. Our system utilizes convolutional block attention modules (CBAMs) [1] appropriately modified to accommodate spectrogram inputs. The proposed CNN front-end fitted with the proposed convolutional attention modules outperform the no-attention and spatial-CBAM baselines by a significant margin on the VoxCeleb [2], [3] speaker verification benchmark. Our best model achieves an equal error rate of 2.031% on the VoxCeleb1 test set, which is a considerable improvement over comparable state of the art results. For a more thorough assessment of the effects of frequency and temporal attention in real-world conditions, we conduct ablation experiments by randomly dropping frequency bins and temporal frames from the input spectrograms, concluding that instead of modelling either of the entities, simultaneously modelling temporal and frequency attention translates to better real-world performance.
+              </em>
+            </font></div>
+            <div id="icassp20_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
               <br>
-              
-              <strong>Sarthak Yadav</strong>, Atul Rai
-              <br>
-              <font size="3">
-              <em>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</em>, 2020
-              </font>
-              <br>
-              <p></p>
-              <a href="javascript:void(0);" onclick="myFunction('icassp20_abs')"><font size="3">Abstract</font></a> /
-              <!-- <a href="https://arxiv.org/abs/1811.01401" target="_blank"><font size="3">arXiv</font></a> / -->
-              <a href="javascript:void(0);" onclick="myFunction('icassp20_bib')"><font size="3">BibTex</font></a>
-              <p></p>
-              <div id="icassp20_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
-                <em>
-                  Majority of the recent approaches for text-independent speaker recognition apply attention or similar techniques for aggregation of frame-level feature descriptors generated by a deep neural network (DNN) front-end. In this paper, we propose methods of convolutional attention for independently modelling temporal and frequency information in a convolutional neural network (CNN) based front-end. Our system utilizes convolutional block attention modules (CBAMs) [1] appropriately modified to accommodate spectrogram inputs. The proposed CNN front-end fitted with the proposed convolutional attention modules outperform the no-attention and spatial-CBAM baselines by a significant margin on the VoxCeleb [2], [3] speaker verification benchmark. Our best model achieves an equal error rate of 2.031% on the VoxCeleb1 test set, which is a considerable improvement over comparable state of the art results. For a more thorough assessment of the effects of frequency and temporal attention in real-world conditions, we conduct ablation experiments by randomly dropping frequency bins and temporal frames from the input spectrograms, concluding that instead of modelling either of the entities, simultaneously modelling temporal and frequency attention translates to better real-world performance.
-                </em>
-              </font></div>
-              <div id="icassp20_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
-                <br>
-                @INPROCEEDINGS{9054440,
-                  author={Yadav, Sarthak and Rai, Atul},
-                  booktitle={ICASSP 2020 - 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
-                  title={Frequency and Temporal Convolutional Attention for Text-Independent Speaker Recognition}, 
-                  year={2020},
-                  volume={},
-                  number={},
-                  pages={6794-6798},
-                  doi={10.1109/ICASSP40776.2020.9054440}}
-              </font></div>
-            </td>
-          </tr>
+              @INPROCEEDINGS{9054440,
+                author={Yadav, Sarthak and Rai, Atul},
+                booktitle={ICASSP 2020 - 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+                title={Frequency and Temporal Convolutional Attention for Text-Independent Speaker Recognition}, 
+                year={2020},
+                volume={},
+                number={},
+                pages={6794-6798},
+                doi={10.1109/ICASSP40776.2020.9054440}}
+            </font></div>
+          </td>
+        </tr>
 
-          <!-- INTERSPEECH 2018 - Discriminative speaker recog -->
-          <tr onmouseout="inter18_0_stop()" onmouseover="inter18_0_start()">
-            <td style="padding:25px;width:25%;vertical-align:middle;">
-              <div class="one">
-                <div class="two" id='inter18_0_image'><img src='images/pub_inter18_0_re.jpg'></div>
-                <img src='images/pub_inter18_0_re.jpg'>
-              </div>
-              <script type="text/javascript">
-                function inter18_0_start() {
-                  document.getElementById('inter18_0_image').style.opacity = "1";
-                }
+        <!-- INTERSPEECH 2018 - Discriminative speaker recog -->
+        <tr onmouseout="inter18_0_stop()" onmouseover="inter18_0_start()">
+          <td style="padding:25px;width:25%;vertical-align:middle;">
+            <div class="one">
+              <div class="two" id='inter18_0_image'><img src='images/pub_inter18_0_re.jpg'></div>
+              <img src='images/pub_inter18_0_re.jpg'>
+            </div>
+            <script type="text/javascript">
+              function inter18_0_start() {
+                document.getElementById('inter18_0_image').style.opacity = "1";
+              }
 
-                function inter18_0_stop() {
-                  document.getElementById('inter18_0_image').style.opacity = "0";
-                }
-                inter18_0_stop()
-              </script>
-            </td>
-            <td style="padding:25px;width:75%;vertical-align:middle">
-              <a href="https://www.isca-speech.org/archive_v0/Interspeech_2018/pdfs/1015.pdf" target="_blank">
-                <papertitle><font size="3">Learning Discriminative Features for Speaker Identification and Verification</font></papertitle>
-              </a>
-              <br>
-              
-              <strong>Sarthak Yadav</strong>, Atul Rai
-              <br>
-              <font size="3"><em>INTERSPEECH</em>, 2018</font>
-  
-              <br>
-              <p></p>
-              <a href="javascript:void(0);" onclick="myFunction('interspeech_abs')"><font size="3">Abstract</font></a> /
-              <!-- <a href="https://arxiv.org/abs/1811.01401" target="_blank"><font size="3">arXiv</font></a> / -->
-              <a href="javascript:void(0);" onclick="myFunction('interspeech_bib')"><font size="3">BibTex</font></a>
-              <p></p>
-              <div id="interspeech_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
-                <em>
-                  The success of any Text Independent Speaker Identification and/or Verification system relies upon the system’s capability to learn discriminative features.
-                  In this paper we propose a Convolutional Neural Network (CNN) Architecture based on the popular Very Deep VGG [1] CNNs, with key modifications to accommodate variable length spectrogram inputs, reduce the model disk space requirements and reduce the number of parameters, resulting in significant reduction in training times. We also propose a unified deep learning system for both Text-Independent Speaker Recognition and Speaker Verification, by training the proposed network architecture under the joint supervision of Softmax loss and Center loss [2] to obtain highly discriminative deep features that are suited for both Speaker Identification and Verification Tasks.
-                  We use the recently released VoxCeleb dataset [3], which contains hundreds of thousands of real world utterances of over 1200 celebrities belonging to various ethnicities, for benchmarking our approach. Our best CNN model achieved a Top1 accuracy of 84.6%, a 4% absolute improvement over VoxCeleb’s approach, whereas training in conjunction with Center Loss improved the Top-1 accuracy to 89.5%, a 9% absolute improvement over Voxceleb’s approach.
-                </em>
-              </font></div>
-              <div id="interspeech_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
-                <br>
-                @inproceedings{yadav2018learning,
-                  title="Learning Discriminative Features for Speaker Identification and Verification.",
-                  author="Sarthak {Yadav} and Atul {Rai}",
-                  booktitle="Interspeech 2018",
-                  pages="2237--2241",
-                  year="2018"
-                }                
-              </font></div>
-            </td>
-          </tr>
+              function inter18_0_stop() {
+                document.getElementById('inter18_0_image').style.opacity = "0";
+              }
+              inter18_0_stop()
+            </script>
+          </td>
+          <td style="padding:25px;width:75%;vertical-align:middle">
+            <a href="https://www.isca-speech.org/archive_v0/Interspeech_2018/pdfs/1015.pdf" target="_blank">
+              <papertitle><font size="3">Learning Discriminative Features for Speaker Identification and Verification</font></papertitle>
+            </a>
+            <br>
+            
+            <strong>Sarthak Yadav</strong>, Atul Rai
+            <br>
+            <font size="3"><em>INTERSPEECH</em>, 2018</font>
 
+            <br>
+            <p></p>
+            <a href="javascript:void(0);" onclick="myFunction('interspeech_abs')"><font size="3">Abstract</font></a> /
+            <!-- <a href="https://arxiv.org/abs/1811.01401" target="_blank"><font size="3">arXiv</font></a> / -->
+            <a href="javascript:void(0);" onclick="myFunction('interspeech_bib')"><font size="3">BibTex</font></a>
+            <p></p>
+            <div id="interspeech_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
+              <em>
+                The success of any Text Independent Speaker Identification and/or Verification system relies upon the system’s capability to learn discriminative features.
+                In this paper we propose a Convolutional Neural Network (CNN) Architecture based on the popular Very Deep VGG [1] CNNs, with key modifications to accommodate variable length spectrogram inputs, reduce the model disk space requirements and reduce the number of parameters, resulting in significant reduction in training times. We also propose a unified deep learning system for both Text-Independent Speaker Recognition and Speaker Verification, by training the proposed network architecture under the joint supervision of Softmax loss and Center loss [2] to obtain highly discriminative deep features that are suited for both Speaker Identification and Verification Tasks.
+                We use the recently released VoxCeleb dataset [3], which contains hundreds of thousands of real world utterances of over 1200 celebrities belonging to various ethnicities, for benchmarking our approach. Our best CNN model achieved a Top1 accuracy of 84.6%, a 4% absolute improvement over VoxCeleb’s approach, whereas training in conjunction with Center Loss improved the Top-1 accuracy to 89.5%, a 9% absolute improvement over Voxceleb’s approach.
+              </em>
+            </font></div>
+            <div id="interspeech_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
+              <br>
+              @inproceedings{yadav2018learning,
+                title="Learning Discriminative Features for Speaker Identification and Verification.",
+                author="Sarthak {Yadav} and Atul {Rai}",
+                booktitle="Interspeech 2018",
+                pages="2237--2241",
+                year="2018"
+              }                
+            </font></div>
+          </td>
+        </tr>
 
-          <!-- Hindawi 2018 - UbiNets -->
-          <tr onmouseout="hind18_0_stop()" onmouseover="hind18_0_start()">
-            <td style="padding:25px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='hind18_0_image'><img src='images/pub_hind_0_re.jpg'></div>
-                <img src='images/pub_hind_0_re.jpg'>
-              </div>
-              <script type="text/javascript">
-                function hind18_0_start() {
-                  document.getElementById('hind18_0_image').style.opacity = "1";
-                }
+        <!-- Hindawi 2018 - UbiNets -->
+        <tr onmouseout="hind18_0_stop()" onmouseover="hind18_0_start()">
+          <td style="padding:25px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='hind18_0_image'><img src='images/pub_hind_0_re.jpg'></div>
+              <img src='images/pub_hind_0_re.jpg'>
+            </div>
+            <script type="text/javascript">
+              function hind18_0_start() {
+                document.getElementById('hind18_0_image').style.opacity = "1";
+              }
 
-                function hind18_0_stop() {
-                  document.getElementById('hind18_0_image').style.opacity = "0";
-                }
-                hind18_0_stop()
-              </script>
-            </td>
-            <td style="padding:25px;width:75%;vertical-align:middle">
-              <a href="https://downloads.hindawi.com/journals/afs/2018/5125103.pdf" target="_blank">
-                <papertitle><font size="3">Prediction of Ubiquitination Sites Using UbiNets</font></papertitle>
-              </a>
+              function hind18_0_stop() {
+                document.getElementById('hind18_0_image').style.opacity = "0";
+              }
+              hind18_0_stop()
+            </script>
+          </td>
+          <td style="padding:25px;width:75%;vertical-align:middle">
+            <a href="https://downloads.hindawi.com/journals/afs/2018/5125103.pdf" target="_blank">
+              <papertitle><font size="3">Prediction of Ubiquitination Sites Using UbiNets</font></papertitle>
+            </a>
+            <br>
+            <font>
+            <strong><font>Sarthak Yadav</font></strong>,
+            <a href="https://www.smvdu.ac.in/index.php/bachelor-of-technology/35-faculty-profile/fp-comp-sc-engg/1223-dr-manoj-kumar-gupta" target="_blank">Manoj Kumar Gupta</a>,
+            <a href="https://www.linkedin.com/in/ankur-singh-bist-5256a085" target="_blank">Ankur Singh Bist</a>
+            <br>
+            <em>Advances in Fuzzy Systems</em>, 2018
+            </font>
+            <br>
+            <p></p>
+            <a href="javascript:void(0);" onclick="myFunction('fuzzy_2018_abs')"><font size="3">Abstract</font></a> /
+            <!-- <a href="https://github.com/AyanKumarBhunia/Handwriting_Recogition_using_Adversarial_Learning" target="_blank"><font size="3">Code</font></a> / -->
+            <!-- <a href="https://arxiv.org/abs/1811.01396" target="_blank" target="_blank"><font size="3">arXiv</font></a> / -->
+            <a href="javascript:void(0);" onclick="myFunction('fuzzy_2018_bib')"><font size="3">BibTex</font></a>
+            <p></p>
+            <div id="fuzzy_2018_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
+              <em>
+                Ubiquitination controls the activity of various proteins and belongs to posttranslational modification. Various machine learning techniques are taken for prediction of ubiquitination sites in protein sequences. The paper proposes a new MLP architecture, named UbiNets, which is based on Densely Connected Convolutional Neural Networks (DenseNet). Computational machine learning techniques, such as Random Forest Classifier, Gradient Boosting Machines, and Multilayer Perceptrons (MLP), are taken for analysis. The main target of this paper is to explore the significance of deep learning techniques for the prediction of ubiquitination sites in protein sequences. Furthermore, the results obtained show that the newly proposed model provides significant accuracy. Satisfactory experimental results show the efficiency of proposed method for the prediction of ubiquitination sites in protein sequences. Further, it has been recommended that this method can be used to sort out real time problems in concerned domain
+              </em>
+            </font></div>
+            <div id="fuzzy_2018_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
               <br>
-              <font>
-              <strong><font>Sarthak Yadav</font></strong>,
-              <a href="https://www.smvdu.ac.in/index.php/bachelor-of-technology/35-faculty-profile/fp-comp-sc-engg/1223-dr-manoj-kumar-gupta" target="_blank">Manoj Kumar Gupta</a>,
-              <a href="https://www.linkedin.com/in/ankur-singh-bist-5256a085" target="_blank">Ankur Singh Bist</a>
-              <br>
-              <em>Advances in Fuzzy Systems</em>, 2018
-              </font>
-              <br>
-              <p></p>
-              <a href="javascript:void(0);" onclick="myFunction('fuzzy_2018_abs')"><font size="3">Abstract</font></a> /
-              <!-- <a href="https://github.com/AyanKumarBhunia/Handwriting_Recogition_using_Adversarial_Learning" target="_blank"><font size="3">Code</font></a> / -->
-              <!-- <a href="https://arxiv.org/abs/1811.01396" target="_blank" target="_blank"><font size="3">arXiv</font></a> / -->
-              <a href="javascript:void(0);" onclick="myFunction('fuzzy_2018_bib')"><font size="3">BibTex</font></a>
-              <p></p>
-              <div id="fuzzy_2018_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
-                <em>
-                  Ubiquitination controls the activity of various proteins and belongs to posttranslational modification. Various machine learning techniques are taken for prediction of ubiquitination sites in protein sequences. The paper proposes a new MLP architecture, named UbiNets, which is based on Densely Connected Convolutional Neural Networks (DenseNet). Computational machine learning techniques, such as Random Forest Classifier, Gradient Boosting Machines, and Multilayer Perceptrons (MLP), are taken for analysis. The main target of this paper is to explore the significance of deep learning techniques for the prediction of ubiquitination sites in protein sequences. Furthermore, the results obtained show that the newly proposed model provides significant accuracy. Satisfactory experimental results show the efficiency of proposed method for the prediction of ubiquitination sites in protein sequences. Further, it has been recommended that this method can be used to sort out real time problems in concerned domain
-                </em>
-              </font></div>
-              <div id="fuzzy_2018_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
-                <br>
-                @article{yadav2018prediction,
-                  title={Prediction of ubiquitination sites using UbiNets},
-                  author={Yadav, Sarthak and Gupta, Manoj and Bist, Ankur Singh},
-                  journal={Advances in Fuzzy Systems},
-                  volume={2018},
-                  publisher={Hindawi}
-                }
-              </font></div>
-            </td>
-          </tr>
+              @article{yadav2018prediction,
+                title={Prediction of ubiquitination sites using UbiNets},
+                author={Yadav, Sarthak and Gupta, Manoj and Bist, Ankur Singh},
+                journal={Advances in Fuzzy Systems},
+                volume={2018},
+                publisher={Hindawi}
+              }
+            </font></div>
+          </td>
+        </tr>
 
         </tbody></table> 
 
