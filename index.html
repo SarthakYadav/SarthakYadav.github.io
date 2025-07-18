@@ -40,7 +40,8 @@
                 <strong><font size="3"><i>Updates</i></font></strong>
                 <br/>
               </div>
-              [05/24] Latest paper on audio xLSTMs was accepted at <a href="https://interspeech2025.org/home">INTERSPEECH 2025</a><br/>
+              [06/25] Paper on AudioMAE++ was accepted at <a href="https://2025.ieeemlsp.org/en/">IEEE MLSP 2025</a><br/>
+              [05/25] Paper on audio xLSTMs was accepted at <a href="https://interspeech2025.org/home">INTERSPEECH 2025</a><br/>
               [06/24] Paper on selective SSMs accepted at <a href="https://interspeech2024.org/">INTERSPEECH 2024</a><br/>
               [01/24] First paper of my PhD accepted at <a href="https://iclr.cc/">ICLR 2024</a><br/>
               [06/23] DeiC compute grant for access to the LUMI Supercomputer<br/>
@@ -51,7 +52,7 @@
               <br/>
               <p style="text-align:center">
                 <a href="mailto:sarthak.yadav3@gmail.com" target="_blank"><font size="3">Email</font></a> &nbsp|&nbsp
-                <a href="https://drive.google.com/file/d/1gqqE0h2buqMLvbpsR4jM76Xc3n0KkiNK/view?usp=sharing" target="_blank">CV</a> &nbsp|&nbsp
+                <a href="https://drive.google.com/file/d/1jK4heGlJOVJX5P7eipTgK5kNjzjiyc0j/view?usp=sharing" target="_blank">CV</a> &nbsp|&nbsp
                 <a href="https://scholar.google.com/citations?user=cVsg9VsAAAAJ&hl=en" target="_blank"><font size="3">Google Scholar</font></a> &nbsp|&nbsp
                 <a href="https://www.linkedin.com/in/sarthakyadav/" target="_blank"><font size="3"> LinkedIn </font></a>  &nbsp|&nbsp
                 <a href="https://github.com/SarthakYadav" target="_blank"><font size="3"> GitHub </font></a>  &nbsp|&nbsp
@@ -86,6 +87,60 @@
         </script>
 
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!-- MLSP 2025 --->
+        <tr onmouseout="mlsp25_0_stop()" onmouseover="mlsp25_0_start()">
+          <td style="padding:25px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='mlsp2025_image'><img src='images/mlsp_webpage.png' width="150"></div>
+              <img src='images/mlsp_webpage.png' width="150">
+            </div>
+            <script type="text/javascript">
+              function mlsp25_0_start() {
+                document.getElementById('mlsp2025_image').style.opacity = "1";
+              }
+
+              function mlsp25_0_stop() {
+                document.getElementById('mlsp2025_image').style.opacity = "0";
+              }
+              mlsp25_0_start()
+            </script>
+          </td>
+          <td style="padding:25px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2507.10464" target="_blank">
+              <papertitle><font size="3">AudioMAE++: learning better masked audio representations with SwiGLU FFNs</font></papertitle>
+            </a>
+            <br>
+            <font size="3">
+            <strong><font>Sarthak Yadav</font></strong>, <a href="https://scholar.google.com/citations?user=3dBjdv4AAAAJ&hl=en">Sergios Theodoridis</a> and <a href="https://scholar.google.com/citations?user=fugL2E8AAAAJ&hl=en">Zheng-Hua Tan</a>
+            <br>
+            <em> Accepted at IEEE MLSP</em>, 2025
+            </font>
+            <br>
+            <p></p>
+            <a href="javascript:void(0);" onclick="myFunction('mlsp2025_abs')"><font size="3">Abstract</font></a> /
+            <a href="javascript:void(0);" onclick="myFunction('mlsp2025_bib')"><font size="3">BibTex</font></a> /
+            <a href="https://github.com/SarthakYadav/audiomae-plusplus-official"><font size="3">Code</font></a>
+            <p></p>
+            <div id="mlsp2025_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
+              <em>
+                Masked Autoencoders (MAEs) trained on audio spectrogram patches have emerged as a prominent approach for learning self-supervised audio representations. While several recent papers have evaluated key aspects of training MAEs on audio data, the majority of these approaches still leverage vanilla transformer building blocks, whereas the transformer community has seen steady integration of newer architectural advancements. In this work, we propose AudioMAE++, a revamped audio masked autoencoder with two such enhancements, namely macaron-style transformer blocks with gated linear units. When pretrained on the AudioSet dataset, the proposed AudioMAE++ models outperform existing MAE based approaches on 10 diverse downstream tasks, demonstrating excellent performance on audio classification and speech-based benchmarks. The proposed AudioMAE++ models also demonstrate excellent scaling characteristics, outperforming directly comparable standard MAE baselines with up to 4x more parameters.
+              </em>
+            </font></div>
+            <div id="mlsp2025_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
+              <br>
+              @misc{yadav2025audiomaelearningbettermasked,
+                      title={AudioMAE++: learning better masked audio representations with SwiGLU FFNs}, 
+                      author={Sarthak Yadav and Sergios Theodoridis and Zheng-Hua Tan},
+                      year={2025},
+                      eprint={2507.10464},
+                      archivePrefix={arXiv},
+                      primaryClass={cs.SD},
+                      url={https://arxiv.org/abs/2507.10464}, 
+                }                    
+            </font></div>
+          </td>
+        </tr>
+
         <!-- INTERSPEECH 2025 --->
         <tr onmouseout="isca25_0_stop()" onmouseover="isca25_0_start()">
           <td style="padding:25px;width:25%;vertical-align:middle">
